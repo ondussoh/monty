@@ -22,7 +22,7 @@ int _ext(char *content, stack_t **stack, unsigned int counter, FILE *file)
 
 	ops = strtok(content, " \n\t");
 	if (ops && ops[0] == '#')
-		return (0);:wq
+		return (0);
 
 	book.arg = strtok(NULL, " \n\t");
 	while (fops[a].opcode && ops)
