@@ -1,4 +1,5 @@
 #include "monty.h"
+#include <stdio.h>
 bus_t book = {NULL, NULL, NULL, 0};
 /**
   * main - entry point
@@ -32,7 +33,7 @@ int main(int argc, char *argv[])
 	while (chars_rd > 0)
 	{
 		lineptr = NULL;
-		chars_rd = getline(&lineptr, &bystsz, fptr);
+		chars_rd = getline(&lineptr, &bytsz, fptr);
 		book.content = lineptr;/*store the line(opcode in stack)*/
 		lc++;
 		if (chars_rd > 0)

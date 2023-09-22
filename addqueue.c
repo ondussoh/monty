@@ -1,3 +1,4 @@
+#include "monty.h"
 /**
  * addqueue - add node to the tail stack
  * @n: new_value
