@@ -58,4 +58,8 @@ void free_stack(stack_t *head);
 int _ext(char *content, stack_t **stack, unsigned int counter, FILE *file);
 void _pall(stack_t **head, unsigned int counter);
 void _pint(stack_t **head, unsigned int counter);
+void _pop(stack_t **head, unsigned int counter);
+void _swap(stack_t **head, unsigned int line_number);
+void _add(stack_t **head, unsigned int line_number);
+void _nop(stack_t **head, unsigned int line_number);
 #endif

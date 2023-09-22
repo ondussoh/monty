@@ -12,9 +12,11 @@ int _ext(char *content, stack_t **stack, unsigned int counter, FILE *file)
 	instruction_t fops[] = {
 				{"push", _push},
 				{"pall", _pall},
-				/*{"pint", _pint},
+				{"pint", _pint},
 				{"pop", _pop},
-				{"nop", _nop},*/
+				{"nop", _nop},
+				{"swap", _swap},
+				{"add", _add},
 				{NULL, NULL}
 				};
 	unsigned int a = 0;

@@ -1,6 +1,6 @@
 #include "monty.h"
 #include <stdio.h>
-bus_t book = {NULL, NULL, NULL, 0};
+
 /**
   * main - entry point
   * @argc: argument count
@@ -9,6 +9,7 @@ bus_t book = {NULL, NULL, NULL, 0};
   */
 int main(int argc, char *argv[])
 {
+	bus_t book = {NULL, NULL, NULL, 0};
 	FILE *fptr;
 	ssize_t chars_rd;
 	size_t bytsz;
