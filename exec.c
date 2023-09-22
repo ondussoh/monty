@@ -11,8 +11,8 @@ int _ext(char *content, stack_t **stack, unsigned int counter, FILE *file)
 {
 	instruction_t fops[] = {
 				{"push", _push},
-				/**{"pall", _pall},
-				{"pint", _pint},
+				{"pall", _pall},
+				/*{"pint", _pint},
 				{"pop", _pop},
 				{"nop", _nop},*/
 				{NULL, NULL}
@@ -22,7 +22,8 @@ int _ext(char *content, stack_t **stack, unsigned int counter, FILE *file)
 
 	ops = strtok(content, " \n\t");
 	if (ops && ops[0] == '#')
-		return (0);
+		return (0);:wq
+
 	book.arg = strtok(NULL, " \n\t");
 	while (fops[a].opcode && ops)
 	{
