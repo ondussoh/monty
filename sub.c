@@ -13,11 +13,8 @@ void sub(stack_t **head, unsigned int line_number)
 	int res = 0;
 
 	temp = *head;
-	while (temp)
-	{
+	for (res = 0; temp != NULL; res++)
 		temp = temp->next;
-		res++;
-	}
 	if (res < 2)
 	{
 		fprintf(stderr, "L%d: can't sub, stack too short", line_number);
