@@ -25,6 +25,14 @@ void mod(stack_t **head, unsigned int line_number)
 		free(book.content);
 		exit(EXIT_FAILURE);
 	}
+	if ((*head)->n == 0)
+	{
+		fprintf(stderr, "L%d: division by zero", line_number);
+		fclose(book.file);
+		free_stack(*head);
+		free(book.content);
+		exit(EXIT_FAILURE);
+	}
 	t = *head;
 	len = (t->next->n % t->n);
 	t->next->n = len;
