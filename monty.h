@@ -57,4 +57,5 @@ void addnode(stack_t **head, int n);
 void free_stack(stack_t *head);
 int _ext(char *content, stack_t **stack, unsigned int counter, FILE *file);
 void _pall(stack_t **head, unsigned int counter);
+void _pint(stack_t **head, unsigned int counter);
 #endif
