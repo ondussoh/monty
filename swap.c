@@ -4,7 +4,7 @@
   * @head: head of the stack
   * @line_number: the line number
   *
-  * Return: Nothing
+  * Return: Nothing(void)
   */
 void _swap(stack_t **head, unsigned int line_number)
 {
