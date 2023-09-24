@@ -21,32 +21,12 @@ int _ext(char *content, stack_t **stack, unsigned int counter, FILE *file)
 				};
 	unsigned int a = 0;
 	char *ops;
-	int flag = 0, j = 0;
 
 	ops = strtok(content, " \n\t");
 	if (ops && ops[0] == '#')
 		return (0);
 
 	book.arg = strtok(NULL, " \n\t");
-
-	if (book.arg)
-	{
-		if (book.arg[0] == '-')
-			j++;
-		for (; book.arg[j] != '\0'; j++)
-		{
-			if (book.arg[j] < 48 || book.arg[j] > 57)
-				flag = 1;
-		}
-		if (flag == 1)
-		{
-			fprintf(stderr, "L%d:unknown instruction %s\n", counter, content);
-			fclose(book.file);
-			free(book.content);
-			free_stack(*stack);
-			exit(EXIT_FAILURE);
-		}
-	}
 	while (fops[a].opcode && ops)
 	{
 		if (strcmp(ops, fops[a].opcode) == 0)
