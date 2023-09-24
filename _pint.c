@@ -1,10 +1,10 @@
 #include "monty.h"
 /**
-  * _pint - prints element top of the stack
+  * _pint - prints int top of the stack
   * @head: stack
   * @counter: line counter
   *
-  * Return: Nothing
+  * Return: Nothing(void)
   */
 void _pint(stack_t **head, unsigned int counter)
 {
